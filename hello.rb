@@ -1,12 +1,10 @@
-def new_function(options={})
-   options.each do |k,v|
-     if k == :this_one
-      puts "The value for key ':this_one' is #{v}."
-      break
-     end
-    end 
- end
+def join_strings(array)
+new_array = []
+     array.each do |x|
+         new_array << x.to_s
+    end
+puts new_array.join
+end
 
-
-h_2 = {:this_one=>3, :that_one=>4} 
-puts new_function(h_2)
+y = [:cat, :dog, 2, 5]
+join_strings(y)
